@@ -52,7 +52,7 @@ const JobRatio = () => {
     return (
         <>
             <h2 className="pb-5 primary-heading font-semibold">Jobs Ratio</h2>
-            <div id="chart" className="bg-primary-100 rounded-lg sm:pl-12 lg:pl-0 pr-6 py-6 pl-6">
+            <div id="chart" className="bg-primary-100 rounded-lg sm:pl-12 lg:pl-0 pr-6 py-6 pl-6 h-[272px] flex flex-col justify-center">
                 <ReactApexChart options={ratioInfo.options} series={ratioInfo.series} type="donut" />
             </div>
         </>
