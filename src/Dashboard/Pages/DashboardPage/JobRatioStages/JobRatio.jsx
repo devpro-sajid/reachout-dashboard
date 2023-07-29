@@ -8,22 +8,22 @@ const JobRatio = () => {
             chart: {
                 type: 'donut',
             },
-            width:'16px',
+            width: '16px',
             labels: ['Open Jobs', 'Urgent Jobs', 'Closed Jobs'],
-            colors: ['#0C579B','#F5BD62', '#EFF4FA'],
+            colors: ['#0C579B', '#F5BD62', '#EFF4FA'],
             plotOptions: {
                 pie: {
-                  donut: {
-                    labels: {
-                      show: true,
-                      total: {
-                        showAlways: true,
-                        show: true
-                      }
+                    donut: {
+                        labels: {
+                            show: true,
+                            total: {
+                                showAlways: true,
+                                show: true
+                            }
+                        }
                     }
-                  }
                 }
-              },
+            },
             responsive: [{
                 breakpoint: 480,
                 options: {
@@ -41,10 +41,10 @@ const JobRatio = () => {
                     chart: {
                         width: 400
                     },
-                    
+
                 }
             }
-        ]
+            ]
         },
 
 
