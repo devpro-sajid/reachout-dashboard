@@ -54,18 +54,19 @@ const SidebarMenuItem = ({ toggle }) => {
     ];
     return (
         <>
+        {/* main div */}
             <div className="px-4">
+                
+                {/* Create Job Button */}
                 <NavLink to='/create-job' className={`${toggle ? "w-[3.6rem]" : "w-full"
-                    } primary-button flex items-center mt-2 ml-1 transition-all duration-300 left-4 bottom-4`}
-                >
-                    <h2
-                        className={`${toggle ? "hidden delay-200" : ""
-                            } desc-size text-brown whitespace-pre pl-4 `}
-                    >
+                    } primary-button flex items-center mt-2 ml-1 transition-all duration-300 left-4 bottom-4`}>
+                    <h2 className={`${toggle ? "hidden delay-200" : ""} desc-size text-brown whitespace-pre pl-4`}>
                         Create New Job
                     </h2>
                     <img className={`${toggle ? "" : "md:ml-2 lg:ml-5 ml-2"}`} src='/DashboardIcon/createjobicon.png' alt="" />
                 </NavLink>
+
+                {/* side nav Item */}
                 {sidebarNav.map((data) => {
                     return (
                         <NavLink onClick={() => setRouteName(data.text)} to={`${data.link}`}
@@ -84,7 +85,9 @@ const SidebarMenuItem = ({ toggle }) => {
                         </NavLink>
                     );
                 })}
-                <div className={`${toggle?'hidden':'block'} mt-24`}>
+
+                {/* upgrade badge */}
+                <div className={`${toggle ? 'hidden' : 'block'} mt-24`}>
                     <UpgradeBadge></UpgradeBadge>
                 </div>
 
