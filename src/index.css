@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.primary-color{
+  color:#0C579B;
+}
+.desc-color{
+color:#556571;
+}
+.desc-size{
+  font-size: 14px;
+}
+.border-color{
+  border-color:#CED5DA;
+}
+.primary-button{
+  @apply md:px-4 md:py-3 px-3 py-2  rounded-[100px] cursor-pointer hover:bg-[#008147] text-white bg-[#23B574]
+}
+.primary-heading{
+  font-size: 20px;
+  color:#2D3E4D;
+}
+.bg-secondary{
+  background-color: #23B574;
+}
+.bg-primary-100{
+  background-color: #FEFEFF;
+}
+.bg-primary-300{
+  background-color: #EFF4FA;
+}
+.bg-primary-900{
+  background-color: #0C579B;
+}
+.active{
+  background-color: #EFF4FA;
+}
+
+/* sidebar css */
+.sidebar-container{
+  @apply  bg-[#FEFEFE] md:w-[28%] lg:w-[20%]  pb-[500px] transition-all duration-500  sm:relative
+}
+.sidebar-contain-toggle{
+  @apply  bg-[#FEFEFe] pb-[500px] transition-all duration-500 border-solid sm:relative
+}
+.sidebar-menu-item {
+  @apply flex items-center mt-2 ml-1 md:px-4 md:py-3 px-3 py-2  rounded-[100px] cursor-pointer hover:bg-[#EFF4FA] transition-all duration-300
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
