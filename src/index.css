@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* global Css */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -48,6 +48,7 @@ color:#556571;
 .active{
   background-color: #EFF4FA;
 }
+/* Global css end */
 
 /* sidebar css */
 .sidebar-container{
@@ -60,15 +61,3 @@ color:#556571;
   @apply flex items-center mt-2 ml-1 md:px-4 md:py-3 px-3 py-2  rounded-[100px] cursor-pointer hover:bg-[#EFF4FA] transition-all duration-300
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
