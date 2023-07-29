@@ -17,7 +17,6 @@ const JobPriorities = ({ singlePriorities }) => {
       colors: [strokeColor, '#EFF4FA'],
     },
 
-
   };
   return (
     <>
