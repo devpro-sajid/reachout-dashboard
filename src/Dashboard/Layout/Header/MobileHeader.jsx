@@ -56,12 +56,14 @@ const MobileHeader = () => {
     return (
         <>
             <div className='bg-[#FEFEFE] py-[17px] px-5 flex md:hidden justify-between items-center sticky top-0 z-50'>
+
+                {/* Activeroute and logo */}
                 <div className='flex space-x-2 items-center'>
                     <img src="/DashboardIcon/candidatereach.png" alt="" />
                     <h2 className='text-[12px] font-semibold'>{activeRoute}</h2>
                 </div>
 
-
+                {/* right side & user info */}
                 <div className='flex items-center space-x-2'>
 
                     <img className=' p-2 h-8 cursor-pointer bg-[#E7EEF5] rounded-full' src="/DashboardIcon/starreach.png" alt="" />
@@ -74,11 +76,12 @@ const MobileHeader = () => {
 
                 </div>
 
-
+                {/* offcanvas menu */}
                 {isMenuOpen && (
                     <div className='absolute top-0 left-0 w-full z-10'>
                         <div className='p-5 bg-primary-100 border rounded shadow-md '>
                             <div className='flex items-center justify-between mb-4'>
+                                {/* head of offcanvas */}
                                 <div>
                                     <NavLink
                                         to='/'
@@ -102,6 +105,8 @@ const MobileHeader = () => {
                                     </button>
                                 </div>
                             </div>
+
+                            {/* offcanvas menu item */}
                             <nav>
                                 <ul className='space-y-4'>
                                     <NavLink onClick={() => setIsMenuOpen(!isMenuOpen)} to='/create-job' className='primary-button flex items-center mt-2 ml-1 transition-all duration-300 left-4 bottom-4 mr-1'
@@ -133,6 +138,7 @@ const MobileHeader = () => {
                                     }
                                 </ul>
                             </nav>
+                            {/* Upgrade Badge */}
                             <div className='mt-24'>
                                 <UpgradeBadge></UpgradeBadge>
                             </div>
