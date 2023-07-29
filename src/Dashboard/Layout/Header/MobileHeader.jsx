@@ -55,7 +55,7 @@ const MobileHeader = () => {
     ];
     return (
         <>
-            <div className='bg-[#FEFEFE] py-[17px] px-5 flex md:hidden justify-between items-center sticky top-0 z-50'>
+            <div className='bg-[#FEFEFE] py-[17px] px-5 flex md:hidden justify-between items-center sticky top-0 z-50 '>
 
                 {/* Activeroute and logo */}
                 <div className='flex space-x-2 items-center'>
@@ -139,7 +139,7 @@ const MobileHeader = () => {
                                 </ul>
                             </nav>
                             {/* Upgrade Badge */}
-                            <div className='mt-24'>
+                            <div className='mt-16'>
                                 <UpgradeBadge></UpgradeBadge>
                             </div>
                         </div>
