@@ -4,13 +4,15 @@ export const ToggleContext= createContext(null);
 
 const ToggleState = ({children}) => {
     const [toggle,setToggle]=useState(false);
-    const [activeRoute,setRouteName]=useState('Dashboard')
+    const [activeRoute,setRouteName]=useState('Dashboard');
+
     const toggleState={
         toggle,
         setToggle,
         activeRoute,
         setRouteName
-    }
+    };
+    
     return (
         <ToggleContext.Provider value={toggleState}>
             {children}
